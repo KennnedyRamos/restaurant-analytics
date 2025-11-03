@@ -59,29 +59,29 @@ Este dashboard permite:
 
 ## 🏗 Arquitetura do Projeto
 
+```bash
 Restaurant-Analytics/
-├─ backend/
-│  ├─ app/
-│  │  ├─ main.py          # Inicialização FastAPI
-│  │  ├─ routes/          # Endpoints API (/sales, /overview, /top-products)
-│  │  ├─ models/          # Models do banco
-│  │  └─ services/        # Funções auxiliares
-│  └─ Dockerfile
-├─ frontend/
-│  ├─ src/
-│  │  ├─ components/      # Dashboard, KPIs, gráficos, filtros, formulário
-│  │  ├─ services/        # API client Axios
-│  │  ├─ App.jsx
-│  │  └─ index.js
-│  ├─ public/
-│  │  └─ index.html
-│  └─ Dockerfile + nginx.conf
-├─ docker-compose.yml
-├─ README.md
-├─ package.json
-└─ .env
-
-
+├─ backend/ # Backend em FastAPI
+│ ├─ app/
+│ │ ├─ main.py # Inicialização do FastAPI
+│ │ ├─ routes/ # Endpoints da API (/sales, /overview, /top-products)
+│ │ ├─ models/ # Models do banco de dados
+│ │ └─ services/ # Funções auxiliares e regras de negócio
+│ └─ Dockerfile # Dockerfile do backend
+├─ frontend/ # Frontend em React
+│ ├─ src/
+│ │ ├─ components/ # Componentes: Dashboard, KPIs, gráficos, filtros, formulário
+│ │ ├─ services/ # API client Axios
+│ │ ├─ App.jsx # Componente raiz do React
+│ │ └─ index.js # Entrada da aplicação
+│ ├─ public/
+│ │ └─ index.html # HTML principal
+│ └─ Dockerfile + nginx.conf # Dockerfile do frontend e configuração do Nginx
+├─ docker-compose.yml # Orquestração Docker
+├─ README.md # Documentação do projeto
+├─ package.json # Dependências do frontend
+└─ .env # Variáveis de ambiente
+```
 
 - **Frontend:** dashboard, gráficos e filtros interativos  
 - **Backend:** API REST que consome dados do banco  
@@ -123,6 +123,7 @@ Restaurant-Analytics/
 1. Copie o arquivo de exemplo:
 ```bash
 cp .env.example .env
+```
 
 ### Clonar projeto
 ```bash
