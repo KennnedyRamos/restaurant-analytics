@@ -61,25 +61,26 @@ Este dashboard permite:
 
 Restaurant-Analytics/
 ├─ backend/
-│ ├─ app/
-│ │ ├─ main.py # Inicialização FastAPI
-│ │ ├─ routes/ # Endpoints API (/sales, /overview, /top-products)
-│ │ ├─ models/ # Models do banco
-│ │ └─ services/ # Funções auxiliares
-│ └─ Dockerfile
+│  ├─ app/
+│  │  ├─ main.py          # Inicialização FastAPI
+│  │  ├─ routes/          # Endpoints API (/sales, /overview, /top-products)
+│  │  ├─ models/          # Models do banco
+│  │  └─ services/        # Funções auxiliares
+│  └─ Dockerfile
 ├─ frontend/
-│ ├─ src/
-│ │ ├─ components/ # Dashboard, KPIs, gráficos, filtros, formulário
-│ │ ├─ services/ # API client Axios
-│ │ ├─ App.jsx
-│ │ └─ index.js
-│ ├─ public/
-│ │ └─ index.html
-│ └─ Dockerfile + nginx.conf
+│  ├─ src/
+│  │  ├─ components/      # Dashboard, KPIs, gráficos, filtros, formulário
+│  │  ├─ services/        # API client Axios
+│  │  ├─ App.jsx
+│  │  └─ index.js
+│  ├─ public/
+│  │  └─ index.html
+│  └─ Dockerfile + nginx.conf
 ├─ docker-compose.yml
 ├─ README.md
 ├─ package.json
 └─ .env
+
 
 
 - **Frontend:** dashboard, gráficos e filtros interativos  
